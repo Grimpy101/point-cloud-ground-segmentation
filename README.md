@@ -5,7 +5,9 @@ Why? Because other methods I tried were kind of slow and some did not work. This
 
 ## How to use
 
-- Compile the binary and use `--help` to view parameters. Most should be pretty self-explanatory. Parameter `cell-size` accepts an f64 and defines how big the sampling grid is.
+- Compile the binary and use `--help` to view parameters.
+- Parameter `cell-size` accepts an f64 and defines how big the sampling grid is. Smaller means more potentially useful ground points but can also sample big enough elevated structures.
+- Parameter `elevation-threshold` determines how forgiving we are towards points higher than the already determined ground point.
 - Prepare an initial cloud (las/laz file), set it as input to the program.
 - ???
 - Profit!
